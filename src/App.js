@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import "./App.css";
+import About from "./component/About/About";
 import Header from "./component/Banner/Header";
 import ProfileComponent from "./component/Banner/ProfileComponent";
 
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <ProfileComponent/>
       </Banner>
+      <About/>
     </Container>
   );
 }

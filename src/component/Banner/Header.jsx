@@ -17,14 +17,12 @@ function Header() {
           <a href="#">Home</a>{" "}
         </span>
         <span>
-          <a href="#">Services</a>{" "}
+          <a href="#">About</a>{" "}
         </span>
         <span>
           <a href="#">Projects</a>{" "}
         </span>
-        <span>
-          <a href="#">Testimonials</a>{" "}
-        </span>
+   
         <span>
           <a href="#">Portfolio</a>{" "}
         </span>
