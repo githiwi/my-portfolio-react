@@ -15,7 +15,7 @@ function About() {
         <Card
           Icon={MdOutlineWeb}
           title={"Web Developer"}
-          disc={`'ve completed the front-end
+          disc={`I've completed the front-end
 course and currently learning the back-end. With my
 experience and dedication, I'm confident I can contribute to
 your company's success`}
@@ -25,19 +25,19 @@ your company's success`}
           Icon={GiSkills}
           
           title={"Technical Skills"}
-          disc={`Java Script
-Html/CSS  
+          disc={`Java Script |
+Html/CSS |  
 
-React 
+React |
 
-Bootstrap`}
+Bootstrap| Sass`}
         />
 
         <Card
           Icon={FaLanguage}
           title={"Languages"}
-          disc={`English 
-Amharic
+          disc={`English |
+Amharic |
 German`}
         />
       </Cards>
