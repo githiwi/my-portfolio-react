@@ -4,49 +4,54 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
 import hiwiphoto from "../../assets/images/hiwi2.jpg";
+import { Slide } from "react-awesome-reveal";
 
 function ProfileComponent() {
   return (
     <Container id="home">
-      <Text>
-        <h4 className="green">
-          Hello<span className="green"> I'm</span>
-        </h4>
-        <h1 className="green">Hiwot Eticha</h1>
-        <h3>Web Developer</h3>
-        <p>
-          I'm Hiwot, a hard-working professional with a degree in Computer
-          Science and six years of experience as an Air Traffic Controller.
-          After I moved to Germany and joined DCI to pursue web development.
-          I've completed the front-end course and currently learning the
-          back-end. With my experience and dedication, I'm confident I can
-          contribute to your company's success.
-        </p>
-        <button>Lets Talk</button>
-        <Social>
-          <p>check out my</p>
-          <div className="social-icons">
-            <span>
-              <a href="#">
-                <FaLinkedinIn />
-              </a>
-            </span>
-            <span>
-              <a href="#">
-                <FaGithub />
-              </a>
-            </span>
-            <span>
-              <a href="#">
-                <AiOutlineInstagram />
-              </a>
-            </span>
-          </div>
-        </Social>
-      </Text>
-      <Profile>
-        <img src={hiwiphoto} alt="hiwi" />
-      </Profile>
+      <Slide direction="left">
+        <Text>
+          <h4 className="green">
+            Hello<span className="green"> I'm</span>
+          </h4>
+          <h1 className="green">Hiwot Eticha</h1>
+          <h3>Web Developer</h3>
+          <p>
+            I'm Hiwot, a hard-working professional with a degree in Computer
+            Science and six years of experience as an Air Traffic Controller.
+            After I moved to Germany and joined DCI to pursue web development.
+            I've completed the front-end course and currently learning the
+            back-end. With my experience and dedication, I'm confident I can
+            contribute to your company's success.
+          </p>
+          <button>Lets Talk</button>
+          <Social>
+            <p>check out my</p>
+            <div className="social-icons">
+              <span>
+                <a href="#">
+                  <FaLinkedinIn />
+                </a>
+              </span>
+              <span>
+                <a href="#">
+                  <FaGithub />
+                </a>
+              </span>
+              <span>
+                <a href="#">
+                  <AiOutlineInstagram />
+                </a>
+              </span>
+            </div>
+          </Social>
+        </Text>
+      </Slide>
+      <Slide direction="right">
+        <Profile>
+          <img src={hiwiphoto} alt="hiwi" />
+        </Profile>
+      </Slide>
     </Container>
   );
 }
@@ -70,7 +75,7 @@ const Container = styled.div`
   }
 `;
 const Text = styled.div`
-flex: 1;
+  flex: 1;
   h4 {
     padding: 1rem 0;
     font-weight: 500;
@@ -102,19 +107,20 @@ flex: 1;
     :hover {
       filter: drop-shadow(0px 10px 10px #01be9570);
     }
-  }`;
-const Social = styled.div`
-margin-top: 3rem;
-display: flex;
-align-items: center;
-gap: 1rem;
-p {
-  font-size: 0.9rem;
-  @media (max-width: 690px) {
-    font-size: 0.7rem;
   }
-}
-.social-icons {
+`;
+const Social = styled.div`
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  p {
+    font-size: 0.9rem;
+    @media (max-width: 690px) {
+      font-size: 0.7rem;
+    }
+  }
+  .social-icons {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -137,9 +143,10 @@ p {
       left: 50%;
       transform: translate(-50%, -50%);
     }
-  }`;
+  }
+`;
 const Profile = styled.div`
-img {
+  img {
     width: 25rem;
     filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
@@ -158,4 +165,5 @@ img {
 
   :hover img {
     transform: translateY(-10px);
-  }`;
+  }
+`;

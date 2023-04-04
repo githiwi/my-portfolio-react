@@ -6,6 +6,7 @@ import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { TfiInstagram } from "react-icons/tfi";
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
+import { Fade,Zoom ,Slide} from "react-awesome-reveal";
 function Footer() {
   const scrollUp = () => {
     window.scroll({
@@ -16,11 +17,13 @@ function Footer() {
   return (
     <Container id="footer">
       <Profile>
-        <h1>Portfolio</h1>
+       <Slide direction="left"> <h1>Portfolio</h1></Slide>
+       <Slide direction="left">
         <div className="address">
           <h1>Address</h1>
           <p>1030 berlin Germany</p>
         </div>
+        </Slide>
         <div className="links">
           <h1>Contact me directly</h1>
           <div>

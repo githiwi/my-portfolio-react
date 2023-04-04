@@ -5,13 +5,16 @@ import Header from "./component/Banner/Header";
 import ProfileComponent from "./component/Banner/ProfileComponent";
 import Footer from "./component/Footer/Footer";
 import MyProjects from "./component/MyProjects/MyProjects";
+import { Fade } from "react-awesome-reveal";
 
 function App() {
   return (
     <Container>
       <Banner>
+        <Fade>
         <Header />
         <ProfileComponent />
+        </Fade>
       </Banner>
       <About />
       <TheColor>

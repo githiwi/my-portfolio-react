@@ -4,42 +4,49 @@ import { MdOutlineWeb } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
 import { FaLanguage } from "react-icons/fa";
 import Card from "./Card";
+import { Slide } from "react-awesome-reveal";
 function About() {
   return (
     <Container id="about">
-      <h4>
-        About <span className="green">Me</span>
-      </h4>
-      <h1>My Skills</h1>
+      <Slide direction="down">
+        <h4>
+          About <span className="green">Me</span>
+        </h4>
+        <h1>My Skills</h1>
+      </Slide>
       <Cards>
-        <Card
-          Icon={MdOutlineWeb}
-          title={"Web Developer"}
-          disc={`I've completed the front-end
+        <Slide direction="left">
+          <Card
+            Icon={MdOutlineWeb}
+            title={"Web Developer"}
+            disc={`I've completed the front-end
 course and currently learning the back-end. With my
 experience and dedication, I'm confident I can contribute to
 your company's success`}
-        />
-
-        <Card
-          Icon={GiSkills}
-          
-          title={"Technical Skills"}
-          disc={`Java Script |
+          />
+        </Slide>
+        <Slide direction="up">
+          <Card
+            Icon={GiSkills}
+           
+            title={"Technical Skills"}
+            disc={`Java Script |
 Html/CSS |  
 
 React |
 
 Bootstrap| Sass`}
-        />
-
-        <Card
-          Icon={FaLanguage}
-          title={"Languages"}
-          disc={`English |
+          />
+        </Slide>
+        <Slide direction="right">
+          <Card
+            Icon={FaLanguage}
+            title={"Languages"}
+            disc={`English |
 Amharic |
 German`}
-        />
+          />
+        </Slide>
       </Cards>
     </Container>
   );
@@ -59,7 +66,6 @@ const Container = styled.div`
   h1 {
     padding-top: 1rem;
   }
-
 `;
 const Cards = styled.div`
   display: grid;
