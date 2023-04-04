@@ -14,17 +14,17 @@ function Header() {
       </Logo>
       <Nav bar={bar}>
         <span>
-          <a href="#">Home</a>{" "}
+          <a href="#home">Home</a>{" "}
         </span>
         <span>
-          <a href="#">About</a>{" "}
+          <a href="#about">About</a>{" "}
         </span>
         <span>
-          <a href="#">Projects</a>{" "}
+          <a href="#myprojects">Projects</a>{" "}
         </span>
    
         <span>
-          <a href="#">Portfolio</a>{" "}
+          <a href="#footer">Portfolio</a>{" "}
         </span>
       </Nav>
       <div onClick={() => setBar(!bar)} className="bars">

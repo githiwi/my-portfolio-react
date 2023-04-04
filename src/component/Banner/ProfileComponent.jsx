@@ -7,7 +7,7 @@ import hiwiphoto from "../../assets/images/hiwi2.jpg";
 
 function ProfileComponent() {
   return (
-    <Container>
+    <Container id="home">
       <Text>
         <h4 className="green">
           Hello<span className="green"> I'm</span>

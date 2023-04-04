@@ -5,7 +5,7 @@ import SliderComp from "./Slider";
 
 function MyProjects() {
   return (
-    <Container>
+    <Container id="myprojects">
       <h1>
         Recent <span className="green">Projects</span>
       </h1>

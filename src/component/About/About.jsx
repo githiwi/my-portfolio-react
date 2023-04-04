@@ -6,7 +6,7 @@ import { FaLanguage } from "react-icons/fa";
 import Card from "./Card";
 function About() {
   return (
-    <Container>
+    <Container id="about">
       <h4>
         About <span className="green">Me</span>
       </h4>
