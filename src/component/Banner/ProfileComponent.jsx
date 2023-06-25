@@ -29,7 +29,7 @@ function ProfileComponent() {
             <p>check out my</p>
             <div className="social-icons">
               <span>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/hiwot-eticha-5ba8a4259/">
                   <FaLinkedinIn />
                 </a>
               </span>

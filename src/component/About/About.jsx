@@ -31,11 +31,11 @@ your company's success`}
            
             title={"Technical Skills"}
             disc={`Java Script |
-Html/CSS |  
+Html|CSS |  
 
 React |
 
-Bootstrap| Sass`}
+Bootstrap| Sass |Node.js | MongoDB`}
           />
         </Slide>
         <Slide direction="right">
