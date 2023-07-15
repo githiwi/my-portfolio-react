@@ -19,16 +19,14 @@ function About() {
           <Card
             Icon={MdOutlineWeb}
             title={"Web Developer"}
-            disc={`I've completed the front-end
-course and currently learning the back-end. With my
-experience and dedication, I'm confident I can contribute to
-your company's success`}
+            disc={`I have a strong background in Computer Science and recently completed comprehensive MERN-Stack courses. My skills include front-end development with HTML, CSS, and JavaScript, along with proficiency in React.js for dynamic user interfaces. On the back end, I am experienced in Node.js, Express.js, and MongoDB, enabling me to create robust server-side logic and efficient APIs. I am adept at problem-solving, effective communication, and I have a strong commitment to continuous learning.
+            I am currently based in Berlin, Germany, and hold a valid resident permit. I am open to travel once a week at maximum. In terms of language skills, I am fluent in English and have a basic understanding of German.
+            `}
           />
         </Slide>
         <Slide direction="up">
           <Card
             Icon={GiSkills}
-           
             title={"Technical Skills"}
             disc={`Java Script |
 Html|CSS |  
