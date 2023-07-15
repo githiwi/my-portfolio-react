@@ -2,14 +2,15 @@ import React from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
 import Project from "./Project";
-import projectPic from '../../assets/images/Zefen.png'
-import workingInProgress from '../../assets/images/work-in-progress-concept-stock-photography_csp21889500.webp'
+import projectPic from "../../assets/images/Zefen.png";
+import workingInProgress from "../../assets/images/work-in-progress-concept-stock-photography_csp21889500.webp";
 
 function SliderComp() {
   let data = [
     {
       img: projectPic,
       disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+      link: "https://zefen-full-stack.vercel.app/",
     },
     {
       img: workingInProgress,
@@ -29,8 +30,7 @@ function SliderComp() {
     },
   ];
 
-
-var settings = {
+  var settings = {
     className: "center",
     centerMode: true,
     dots: false,
@@ -47,8 +47,8 @@ var settings = {
           slidesToScroll: 2,
           infinite: true,
           dots: false,
-          centerMode:false
-        }
+          centerMode: false,
+        },
       },
       {
         breakpoint: 600,
@@ -56,29 +56,22 @@ var settings = {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
-          centerMode: false
-        }
+          centerMode: false,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: false
-        }
-      }
-    ]
+          centerMode: false,
+        },
+      },
+    ],
   };
   let sliderProject = "";
-    sliderProject = data.map((item, i) => (
-        <Project item = {item} key={i}/>
-    ))
-  return (
-    <Slider {...settings} >
-        {sliderProject}
- 
-    </Slider>
-  );
+  sliderProject = data.map((item, i) => <Project item={item} key={i} />);
+  return <Slider {...settings}>{sliderProject}</Slider>;
 }
 
 export default SliderComp;

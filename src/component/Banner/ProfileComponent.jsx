@@ -3,7 +3,8 @@ import styled from "styled-components";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
-import hiwiphoto from "../../assets/images/hiwi2.jpg";
+import hiwiphoto from "../../assets/images/job2.jpg";
+
 import { Slide } from "react-awesome-reveal";
 
 function ProfileComponent() {
@@ -16,14 +17,27 @@ function ProfileComponent() {
           </h4>
           <h1 className="green">Hiwot Eticha</h1>
           <h3>Web Developer</h3>
-          <p>
-            I'm Hiwot, a hard-working professional with a degree in Computer
-            Science and six years of experience as an Air Traffic Controller.
-            After I moved to Germany and joined DCI to pursue web development.
-            I've completed the front-end course and currently learning the
-            back-end. With my experience and dedication, I'm confident I can
-            contribute to your company's success.
-          </p>
+          <ul>
+            <li>
+              A dedicated professional with the background of Computer Science
+              and six years of experience as an Air Traffic Controller
+            </li>
+            <li>
+              Completed comprehensive front-end and back-end courses to
+              transition into a MERN-Stack role.
+            </li>
+            
+            <li>
+              Proven expertise in decision-making, problem-solving, and
+              multitasking, along with excellent communication and technical
+              skills.
+            </li>
+            <li>
+              Eager to leverage my diverse background and newly acquired web
+              development skills to contribute to the success of your company.
+            </li>
+            <li>Eligible to work in Germany with a valid resident permit.</li>
+          </ul>
           <button>Lets Talk</button>
           <Social>
             <p>check out my</p>
@@ -34,7 +48,7 @@ function ProfileComponent() {
                 </a>
               </span>
               <span>
-                <a href="#">
+                <a href="https://github.com/githiwi">
                   <FaGithub />
                 </a>
               </span>

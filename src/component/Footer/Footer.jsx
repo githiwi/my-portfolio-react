@@ -6,7 +6,7 @@ import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { TfiInstagram } from "react-icons/tfi";
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
-import { Fade,Zoom ,Slide} from "react-awesome-reveal";
+import { Slide} from "react-awesome-reveal";
 function Footer() {
   const scrollUp = () => {
     window.scroll({
@@ -21,7 +21,7 @@ function Footer() {
        <Slide direction="left">
         <div className="address">
           <h1>Address</h1>
-          <p>1030 berlin Germany</p>
+          <p>13355 berlin Germany</p>
         </div>
         </Slide>
         <div className="links">
@@ -31,7 +31,7 @@ function Footer() {
               {" "}
               <MdPhoneInTalk />
             </span>
-            <a href="tel:+49 176 --- ---">+49 176 --- ---</a>
+            <a href="tel:+49 176 --- ---">+49 176 21535321</a>
           </div>
 
           <div>
@@ -39,7 +39,7 @@ function Footer() {
               {" "}
               <FiMail />
             </span>
-            <a href="h--- @gmail.com">h--- @gmail.com</a>
+            <a href="h--- @gmail.com">hiwi5555@gmail.com</a>
           </div>
         </div>
 
@@ -47,19 +47,20 @@ function Footer() {
           <h1>Check my profiles</h1>
           <div className="icons">
             <span>
-              <a href="#">
+              <a href="https://github.com/githiwi">
                 <AiOutlineGithub />
               </a>
             </span>
             <span>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/hiwot-eticha-5ba8a4259/">
                 <AiOutlineLinkedin />
               </a>
             </span>
             <span>
-              <a href="#">
-                <TfiInstagram />
-              </a>
+              {/* <a href="#">
+              
+              </a> */}
+              <TfiInstagram />
             </span>
           </div>
         </div>
@@ -68,19 +69,19 @@ function Footer() {
         </ArrowUp>
       </Profile>
       <Form>
-        <form>
+        <form method="POST" action="https://formsubmit.co/tereteterethiwi@gmail.com">
           <div className="name">
             <span>
               <CgProfile />
             </span>
-            <input type="text" placeholder="Fullname..." />
+            <input type="text"  placeholder="Fullname..." />
           </div>
 
           <div className="email">
             <span>
               <MdOutlineAlternateEmail />
             </span>
-            <input type="email" placeholder="Email..." />
+            <input type="email" name="email" placeholder="Email..." required/>
           </div>
 
           <div className="message">
@@ -88,7 +89,7 @@ function Footer() {
               <FiMail />
             </span>
             <textarea
-              name=""
+              name="message"
               id=""
               cols=""
               rows=""

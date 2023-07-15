@@ -10,7 +10,7 @@ function Project(props) {
       <div className="disc">
         <h1>Title</h1>
         <p>
-          {disc} <a href="#">demo</a>
+          {disc} <a href="/https://zefen-full-stack.vercel.app/">demo</a>
         </p>
       </div>
     </Container>

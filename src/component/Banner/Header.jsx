@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, {  useState } from "react";
 import styled from "styled-components";
 import { TbHexagonLetterH } from "react-icons/tb";
 
@@ -12,19 +12,19 @@ function Header() {
         </span>
         <h1>Portfolio</h1>
       </Logo>
-      <Nav bar={bar}>
-        <span>
-          <a href="#home">Home</a>{" "}
+      <Nav bar={bar} >
+        <span >
+          <a href="#home" className="white">Home</a>{" "}
         </span>
         <span>
-          <a href="#about">About</a>{" "}
+          <a href="#about" className="white">About</a>{" "}
         </span>
         <span>
-          <a href="#myprojects">Projects</a>{" "}
+          <a href="#myprojects" className="white">Projects</a>{" "}
         </span>
    
         <span>
-          <a href="#footer">Portfolio</a>{" "}
+          <a href="#footer" className="white">Portfolio</a>{" "}
         </span>
       </Nav>
       <div onClick={() => setBar(!bar)} className="bars">
@@ -119,6 +119,7 @@ const Nav = styled.div`
     transition: height 400ms ease-in-out;
     overflow: hidden;
     z-index: 100;
+    color: #fff;
   }
   span {
     margin-left: 1rem;
@@ -138,13 +139,14 @@ const Nav = styled.div`
         transform: scale(0);
         transform-origin: right;
         transition: transform 400ms ease-in-out;
+        
       }
       :hover:before {
         transform: scale(1);
         transform-origin: left;
       }
       :hover {
-        opacity: 0.7;
+         opacity: 0.7;
       }
     }
   }

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+//import { Router,Routes} from "react-router-dom";
 import "./App.css";
 import About from "./component/About/About";
 import Header from "./component/Banner/Header";
@@ -6,14 +7,15 @@ import ProfileComponent from "./component/Banner/ProfileComponent";
 import Footer from "./component/Footer/Footer";
 import MyProjects from "./component/MyProjects/MyProjects";
 import { Fade } from "react-awesome-reveal";
+//import ThankYou from "./component/Footer/ThankYou";
 
 function App() {
   return (
     <Container>
       <Banner>
         <Fade>
-        <Header />
-        <ProfileComponent />
+          <Header />
+          <ProfileComponent />
         </Fade>
       </Banner>
       <About />
@@ -22,7 +24,7 @@ function App() {
       </TheColor>
 
       <TheColor>
-        <Footer/>
+        <Footer />
       </TheColor>
     </Container>
   );
@@ -39,4 +41,6 @@ const Banner = styled.div`
     padding-bottom: 2rem;
   }
 `;
-const TheColor = styled.div` background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);`;
+const TheColor = styled.div`
+  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+`;
